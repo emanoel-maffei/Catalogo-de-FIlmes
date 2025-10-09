@@ -39,6 +39,7 @@ function removerFilme(indice, elementoDOM) {
 // -------------------------------------------------------------------
 // FUNÇÃO DE RENDERIZAÇÃO
 // -------------------------------------------------------------------
+
 /**
  * Cria a exibe a estrutura HTMML de um  filme na lista.
  * @param {Object} filme - O objeto {titulo, sinopse} do filme.
@@ -46,7 +47,7 @@ function removerFilme(indice, elementoDOM) {
  */
 function renderizarFilme(filme, indice) {
     // Remove a mensagem inicial se for o primeiro filme
-    if (catalogo.length == 0) {
+    if (catalogo.length >= 1) {
         listaFilmesContainer.innerHTML = '';
     }
 
@@ -130,6 +131,6 @@ function adicionarFilme(evento) {
 
 // 8. ESCUTANDO O EVENTO DO BOTÃO/FORMULÁRIO
 // Anexamos a função 'adicionarFilme' ao evento de 'submit' do formulário.
-fomr.addEventListener('submit', adicionarFilme);
+form.addEventListener('submit', adicionarFilme);
 
 console.log("JavaScript carregado. pronto para iniciar o catálogo!");
