@@ -1,0 +1,14 @@
+TAREFA INICIAL:
+    1. SEPARE 15 FILMES CONSIDERANDO GENEROS DIFERENTES 
+    2. COPIE E ARMAZENA AS SINOPSES
+    3. SALVE UMA IMAGEM PARA CADA FILME (POSTER)
+    4. PESQUISE UM TRAYLER NO YOUTUBE PARA CADA FILME
+
+Quantidade: 6
+
+Ação: Jurassic-World-O-Mundo-dos-Dinossauros
+Aventura: As-Aventuras-de-Pi
+Comédia: As-Branquelas
+Drama: Titanc
+Documentário: Pele-Eterno
+Fantasia: Como-Treinar-Seu-Dragao

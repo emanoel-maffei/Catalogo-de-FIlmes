@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Filmes - Fase 1: Cadastro Manual (DOM Básico)</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <h1>Catálogo de Filmes</h1>
+
+    <form id="cadastro-filme">
+        <h2>Adicionar Novo Filme</h2>
+
+        <div>
+            <label for="titulo">Título do Filme:</label>
+            <input type="text" id="titulo">
+        </div>
+
+        <div>
+            <label for="sinopse">Sinopse:</label>
+            <textarea id="sinopse" required></textarea>
+        </div>
+
+        <button type="submit">Adicionar Filme</button>
+    </form>
+
+    <hr>
+
+    <div id="lista-filmes">
+        <p>Nenhum filme cadastrado ainda.</p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
