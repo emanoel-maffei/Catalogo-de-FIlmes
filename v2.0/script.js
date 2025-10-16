@@ -115,6 +115,4 @@ async function adicionarFilme(evento) {
 }
 
 // 6. ESCUTANDO O EVENTO DO FORMULÁRIO
-form.addEventListener("submit", () => {
-
-})
+form.addEventListener("submit", adicionarFilme);
