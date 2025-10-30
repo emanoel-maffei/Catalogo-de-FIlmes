@@ -95,6 +95,7 @@
 
             infoDiv.appendChild(tituloH3);
             infoDiv.appendChild(sinopseP);
+            infoDiv.appendChild(trailerLink);
             infoDiv.appendChild(removerBotao);
 
             filmeDiv.appendChild(imagemPoster);
@@ -109,7 +110,7 @@
             const titulo = tituloInput.value.trim();
             const sinopseManual = sinopseInput.value.trim();
 
-            if (!titulo) return;
+            if (!titulo) return;    
 
             const url = `https://www.omdbapi.com/?apikey=${API_KEY}&t=${encodeURIComponent(titulo)}&lang=pt`;
 
