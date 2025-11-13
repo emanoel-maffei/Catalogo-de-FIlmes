@@ -1,5 +1,5 @@
 // Substitua pela sua chave REAL do OMDB API
-const OMDB_API_KEY = 'coloque sua chave aqui';
+const OMDB_API_KEY = 'f55f96f2';
 const listaFilmesContainer = document.querySelector('.lista-filmes');
 const searchInput = document.querySelector('.search-input');
 
@@ -16,17 +16,17 @@ function criarCardFilme(filme) {
     card.dataset.imdbId = filme.imdbID;
 
     // Garante que o rating seja um valor presente
-    const rating = filme.imdbRating ? `(Star) ${filme.imdbRating}` : `(Star) N/A`;
+    const rating = filme.imdbRating ? `${filme.imdbRating}` : `N/A`;
 
     // Conteúdo HTML card, usando as novas classes CSS
     card.innerHTML = `
-        <img src="${filme.poster !== 'N/A' ? filme.poster : 'placeholder.jpg'}"
-            alt="${filme.title}"
+        <img src="${filme.Poster !== 'N/A' ? filme.Poster : 'placeholder.jpg'}"
+            alt="${filme.Title}"
             class="poster-filme">
         <span class="avaliacao">${rating}</span>
         <div class="card-detalhes">
-            <h3 class="titulo-filme">${filme.title} (${filme.year})</h3>
-            <buttton class="botao-adicionar" data-title="${filme.title}">
+            <h3 class="titulo-filme">${filme.Title} (${filme.Year})</h3>
+            <buttton class="botao-adicionar" data-title="${filme.Title}">
                 + Minha Lista
             </button>
         </div>
