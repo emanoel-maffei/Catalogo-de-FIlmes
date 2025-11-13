@@ -108,7 +108,19 @@ function buscarEExibirDetalhes(imdbID) {
 // Isso evita chamar a API a cada tecla digitada.
 let searchTimeout;
 searchInput.addEventListener('input', (event) => {
-    // Limpa o timeout anteiror para evitar chamadas multiplas.
+    // Limpa o timeout anteiror para evitar chamadas múlltiplas.
+    clearTimeout(searchTimeout);
+
+    // Define um novo Timeout para buscar apos 500ms (0.5s)
+    searchTimeout = setTimeout(() => {
+       buscarFilmes(event.target.value.trim()); 
+    }, 500);
+})
+
+// Exemplo de carregamento inicial
+document.addEventListener('DOMContentLoaded', () => {
+    // Busca filmes ao carregar a página (Ex: os mais recentes)
+    buscarFilmes('popular');
 })
 
 
